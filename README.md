@@ -51,5 +51,3 @@ Focused on practical, secure, and educational Linux hardening.
 This project is released under the MIT License.
 
 ---
-
-If you want, I can also bundle the full project files into a zip you can download. Just let me know!
