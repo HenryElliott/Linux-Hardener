@@ -1,23 +1,55 @@
-# Web Vulnerability Scanner
+# Linux Hardening Checklist Tool
 
-A CLI-based web scanner designed for learning and analyzing basic security issues in web applications.
+A lightweight, non-destructive Linux security scanner that generates a basic report of important system hardening checks.
+
+---
 
 ## Features
-- Extracts forms on webpages
-- Checks for missing security headers
-- Enumerates common sensitive directories
-- Color-coded output using Rich
 
-## Getting Started
-1. Install dependencies:
+- Checks SSH root login and password authentication settings  
+- Tests firewall status (supports ufw and firewalld)  
+- Lists system users with UID ≥ 1000  
+- Displays open network ports and listening services  
+
+---
+
+## Installation & Usage
+
+1. Clone or download the repository.
+
+2. Make scripts executable:
+
     ```bash
-    pip install -r requirements.txt
-    ```
-2. Add target URLs you have permission to test in `targets.txt`.
-3. Run the scanner:
-    ```bash
-    python3 scanner/main.py
+    chmod +x main.sh checks/*.sh
     ```
 
-## Usage Notice
-**DreadPulse** is intended for educational and authorized testing purposes only. Always ensure you have explicit permission before scanning any website.
+3. Run the main script (recommended with sudo for complete checks):
+
+    ```bash
+    sudo ./main.sh
+    ```
+
+---
+
+## Important Notes
+
+- This tool only reads system configurations and does **not** modify any files.  
+- Some checks require elevated privileges to provide full results.  
+- Use responsibly and only on systems you own or have permission to test.
+
+---
+
+## About
+
+Created by ShadowCrypt Solutions  
+Focused on practical, secure, and educational Linux hardening.
+
+---
+
+## License
+
+This project is released under the MIT License.
+
+---
+
+If you want, I can also bundle the full project files into a zip you can download. Just let me know!
